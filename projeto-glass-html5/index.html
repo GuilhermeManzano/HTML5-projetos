@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head> 
+   <meta charset="UTF-8">
+   <title>Tudo sobre Google Glass</title>
+   <link href="_css/estilo.css" rel="stylesheet" type="text/css"/> <!-- comando
+utilizado para chamar o ESTILO.CSS dentro do documento, referenciando pela pasta e local de arquivo-->
+   
+ <!-- tudo o que é colocado dentro do STYLE do head do programa irá mudar a formatação de todas as partes do programa que contenham a mesma TAG. Neste caso, todas as tag "P" irão vir com a formatação de justificado e com espaço no ínico da frase--> <!-- o comando BACKGROUND COLOR é uttilizado para deixar todo o fundo da página em cor outra cor e COLOR muda a cor das letras do texto inteiro-->
+</head>
+
+<script language="javascript" src="_javascript/funcoes.js"></script>
+
+<body>
+<div id="interface">
+<header id="cabecalho"><!--Monta o cabeçalho do site, não pode uti
+ lizar espaços ou acentos.-->
+<hgroup> <!-- utilizado para juntar os dois titulos em um unico
+grupo para melhorar a indexação do site-->
+<h1>Google Glass</h1>
+<h2> A revolução do Google está chegando</h2>
+</hgroup>  
+    
+<img id="icone" src="_imagens/glass-oculos-preto-peq.png" alt=""/> <!-- Utilizado para trazer uma imagem que está em uma pasta dentro do projeto para a programação principal-->
+<nav id="menu"> <!-- cria um menu flutuante através do ESTILO.CSS-->        
+<h6>Menu Principal</h6>
+<ul type="disc">
+    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li> <!--transforma o nome em um item, O INDEX HTML manda o usuário para a página inicial. A função ONMOUSEOVER coloca uma imagem no menu home, quando o mouse é passando em cima dele e, o ONMOUSEOUT, volta a imagem quando o mouse sai de cima-->
+    <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a></li>
+    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
+    <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimídia</a></li>
+    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale  conosco</a></li>
+</ul> <!-- cria uma lista ordenada dentro do navegador-->
+</nav> <!-- cria um menu de navegação dentro do site-->
+</header>
+    
+ <!-- &nbsp; &nbsp este comando serve para dar um "espaço em braco" entre pala-
+vras, sendo que, cada comando deste representa um espaço em branco adicional 
+entre as palavras -->
+
+<section id="corpo">
+<article id="noticia-principal">
+<header id="cabecalho-artigo"> 
+<hgroup>
+<h3>Tecnologia > <br> <!-- esta tag é utilizado para pular 1 linha, para pular
+várias linhas é só colocar mais destas tags, sendo que para cada uma delas colo-
+cadas, representa uma linha pulada -->Inovações</h3>
+<h1 style="text-align: center; text-indent: 50px">Saiba tudo sobre o Google Glass</h1> <!-- Comando para alinhar o texto em CSS no cetro da página, o "LEFT" faz o alinhamento à esquerda, "RIGHT" alinhamento à direita e "JUSTIFY" para colocar tudo justificado. O TEXT IDENTY 50pc serve para dar um espaço antes de inciar o parágrafo-->
+<h2>por Gustavo Guanabara</h2>
+<h3 class="direita">Atualizado em 23/Abril/2018</h3>
+</hgroup>    
+</header>   
+    
+<h2>O que é</h2>
+<p>O <b>Google Glass</b> <!-- coloca a palavra em NEGRITO--> é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <i><a href="http://glass.google.com" target="_blank">Project Glass</a></i> <!-- colca em ITALICO a palavra-->, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeocon&shy;ferências. <!-- o cmando shy é utilizado para realizar uma quebra de palavras que contenham o hífen, da maneira como a lingua portuguesa exige e tag "A" cria uma referência de hiperlink e a referencia "blank" é utilizado para abrir uma nova aba, ao invés de abrir o link na aba atual-->Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de <del>tela</del> <!-- coloca o texto como TACHADO--> para o acessório.</p> <!-- mostra para o editor que este espçao entre os "p" é um pará-
+-->
+
+<figure class="foto-legenda">
+   <img src="_imagens/glass-quadro-homem-mulher.jpg" alt=""/>
+   <figcaption>
+       <h3>Google Glass</h3>
+       <p>Uma nova forma de ver o mundo.</p>
+   </figcaption>
+</figure> <!-- Utilizado para melhorar a indexação da imagem no site dos buscas, e o FIGCAPTION é a legenda da imagem também para melhorar a busca da imagem pelo goole-->
+
+<h2>Data de lançamento</h2>
+<p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em <span style="text-decoration: underline;">demonstrações</span> <!-- Esta tag é feita em CSS, SPAN é um comando genérico para editar em CSS e UNDERLINE serve para deixar o texto sublinhado--> a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p>
+
+<h2>Especif<wbr/>icações Técnicas</h2>
+<table id="tabelaspec"> <!-- comando para se fazer uma TABELA. TR são as linhas da coluna e TD são as celulas de cada linha. O comando ROwWSPAWN é utilziado para fazer uma celula ocupar duas ou mais linhas ao mesmo tempo, sendo que o valor entre parenteses a ser colocado é o numero de linhas desejado-->
+    <caption>Tabela Técnica do <b>Google Glass</b><span>Mar/2013</span><br></caption> <!-- titulo da tabela, legenda-->
+<tr><b><td class="ce">Tela</td><td class="cd"></b>Resolução equivalente a tela de 25"</td></tr><br><!--esta classe serve para criar várias subdivisoes da tag TD, utilizada para quandos se quer utilizar cores e fontes distinas para palavras que usam a mesma classe-->
+<tr><b><td rowspan="2" class="ce">Camera</td></b><td class="cd">5MP para fotos</td></tr><br>
+<tr><td class="cd">720p para vídeos</tr></td>
+<tr><b><td rowspan="2" class="ce">Conectividade</td></b><td class="cd"> Wi-Fi</tr></td><br>
+<tr><td class="cd">Bluetooth</tr></td>
+<tr><span style="font-weight:bolder;"><td class="ce">Memória Interna</td></span><td class="cd">12GB</td></tr> <!-- Comando para colocar em negrito via CSS, com um realce mais forte-->
+</table>
+
+<h2>Como funciona</h2>
+<p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça</p>
+
+<h2>O que você pode fazer com o Google Glasses</h2>
+<p>O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-<wbr/>humano”<!-- utilizado para quebrar palavras ou links muito grandes, mesmo que a janela do navedor seja diminuída bastante-->, já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.</p>
+
+[AQUI ENTRA UM VÍDEO]
+</section> <!-- cria uma seção única indivisivel na pagina, ideal para evitar "quebrar o conteudo sequencial em outra página-->
+</article>
+      
+<aside id="lateral">
+<h1>Outras Notícias</h1>
+<h2>Vídeo mais recente</h2>
+
+[AQUI ENTRA UM VÍDEO]
+
+<h2>Novidades no Glass</h2>
+<p>O Google enfim revelou as especificações completas do Google Glass, e com ele uma surpresa ainda inédita no mercado: a gigante das buscas usará um sistema de áudio baseado na transdução por condução. Através das hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de microvibrações em determinados ossos de sua cabeça, sem usar nenhum tipo de alto-falante.</p>
+
+<p>Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que, em proporção, equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.</p>
+</aside><!--cria um menu lateral com o conteudo selecionado, no formato de uma segunda coluna-->  
+
+<footer id="rodape">
+  Copyright &copy; 2018 - by Gustavo Guanabara<br>
+  <a href="http://facebook.com/cursoemvideo" target="_blank">Facebook</a>  | 
+  <a href="http://twitter.com/cursoemvideo" target="_blank"> Twitter </a>
+</footer> <!-- é o rodapé do site-->
+
+</div>
+</body>
+</html>

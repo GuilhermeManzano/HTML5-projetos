@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+form {
+    width: 500px;
+    margin: auto;
+   } 
+input, textarea { /*formato as areas externas do formulario*/
+    font-family: san-serif;
+    font-weight: normal;
+    font-size: 13pt;      
+    background-color: rgba(255,255,255,.8);
+   }
+inputtextarea:hover, textarea:hover{
+     background-color: #dddddd;
+   }
+legend{
+    color: #888888;
+    font-weight: bold;/*conjunto de comandos formato o TITULO*/
+    font-size: 13pt;
+    font-family: sans-serif;
+   } 
+fieldset{/*comandos para formatar os campos digitaveis*/
+    border-color: #cecece;
+    margin: 20px;         
+   }
+   
+fieldset#sexo{
+    width: 150px;
+   }
+fieldset#usuario{
+    background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;/*configura uma imagem de fundo para o campo do usuario. as porcentagens modifica a posição da imagem dentro do quadrado e NO-REPEAT diz que a imagem só deve aparecer 1 vez*/
+   }   
+fieldset#endereco{
+     background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%;
+   }
+   fieldset#mensagem{
+     background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%;
+   }
+   fieldset#pedido{
+     background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95%;
+   }
+
+   
+   

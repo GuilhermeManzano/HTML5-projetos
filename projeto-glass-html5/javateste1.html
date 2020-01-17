@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <title>Teste JavaScript</title>
+        <meta charset="UTF-8">
+<script>
+    function acendeLampada(){//o que estiver entre () são paramentros e entre {} são linhas de códigos, TODO COMANDO EM JAVASCRIPT PRECISA TERMINAR EM ;
+     document.getElementById("luz").src="_imagens/lampada-acesa.jpg"; //pega um elemento pelo ID, no caso, ele se conecta a imagem da lampada ACESSA
+    }
+    function apagaLampada(){
+       document.getElementById("luz").src="_imagens/lampada-apagada.jpg"; 
+    }
+    function quebraLampada(){
+        document.getElementById("luz").src="_imagens/lampada-quebrada.jpg";
+    }
+</script>
+
+</head>
+<body>
+    <h1>Acenda a lâmpada</h1>
+    <img src="_imagens/lampada-apagada.jpg" id="luz" alt="" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()"/> <!-- o comando ONCLICK ativa uma imagem quando for clicado em cima do objeto e no ONMMOUSEMOVE é acionado um comando quando o mouse passar em cima do objeto. o comando ONMOUSEOUT é ativado quando o mouse sai de cima do objeto-->
+</body>
+</html>

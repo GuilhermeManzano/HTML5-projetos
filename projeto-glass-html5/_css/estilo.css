@@ -1,0 +1,216 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");  
+}
+
+body {
+    background-color: wheat;
+    color: #003333;
+    font-family: Arial, sans-serif;
+}
+div#interface{
+    width:1000px; /*adicona uma largura máxima em todo o conteúdo da p*/
+    background-color: white; /*muda a cor do fundo apenas na parte da INTERFACE do código*/
+    margin: -20px auto 0px auto; /*ajusta as margens da parte da INTERFACE,o -20 representa a distância até a margem superior, o primeiro AUTO a margem direita e deixa o navegador ajustar a melhor margem possivel, o 0px representa a margem de baixo e o outro auto a margem esquerda, essa sequencia deixa toda a interface do site centralizada*/
+    box-shadow: 0px 0px 20px gray; /*cria uma pequena sombra ao redor da INTERFACE*/
+    padding: 10px 10px 10px 10px;/*configura o espaço interno do objeto*/
+       }   
+       
+p{
+    text-align: justify; /*organiza todos os paragrafots*/
+    text-indent: 50px ;
+}
+a{
+  color: #606060; /*muda a formataçao de todos os HIPERLINKS*/
+  text-decoration: none;
+}
+a:hover{
+   text-decoration: underline; 
+}      
+header#cabecalho img#icone{ /*está chamando a imagem do oculos que está na parte de cima do site*/
+    position: relative;
+    left: 81%;
+    top: 70px
+       }            
+header#cabecalho{
+    border-bottom: 1px gray solid; /*cria uma linha de cabealho*/
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px; /*insere uma imagem no background com o logo*/
+       }          
+header#cabecalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: gray;
+    text-shadow: 1px 1px 1px black;
+    padding: 0px;
+    margin-bottom: 0px;/*diminui espaço entre os titulos H1 e H2*/
+       }     
+header#cabecalho h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px; 
+    margin-top: 0px;
+       } 
+       
+       /* Formatação de imagens com legendas */
+figure.foto-legenda{ /* Comando utilizado para modificar a estrutra da 
+igura com a classe foto-lengeda*/
+    position: relative;
+    border: 8px solid white;
+    width: 400px;
+    box-shadow: 1px 1px 4px black; /* cria uma ligeira borda com sombreamento em preto*/
+       }
+figure.foto-legenda img {
+         width: 100%;
+         height: 100%;
+       }
+figure.foto-legenda figcaption {
+        opacity: 0;
+        position: absolute;
+        top:0px;
+        background-color: rgba(0,0,0,.4); /*codigo para cor preta, sendo que 
+       o 0.4 é a opacidade da cor da letra*/
+        color: white; /*é a cor da letra*/
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box; /*mantem a borda da legenda dentro da borda da imagem*/       /*esta cadeia de comanda cria uma legenda em cima da imagem, com uma leve
+    transparencia*/
+           transition: opacity 1s; /* retarda o efeito de aparecer a legenda da
+     imagem em 1 segundo*/
+       }
+figure.foto-legenda:hover figcaption {
+    opacity:1;
+    } /*o HOVER é um comando acionado apenas quando o usario passar o mouse em
+cima da imagem. Neste caso, fazendo isso, o usuario poderá ver a legenda da imagem*/
+       
+/* Formatação do MENU*/  
+nav#menu {
+    display: block; /**cria os menus em formato de BLOCOS*/    
+}
+nav#menu ul {
+    list-style: none; /*retira os marcadores do menu*/
+    text-transform: uppercase; /*transforma todas as letras em maiúscula*/
+    position: relative;
+    left: 35%;
+    top: -200px
+}
+nav#menu li {
+    display: inline-block; /*coloca todos os itens lado a lado*/
+    background-color: #dddddd; /*muda a cor do fundo na caixa do tecto*/
+    padding: 10px; /*controla o espaçamento dentro do objeto*/
+    margin: 4px; /**controla o espaçamento entre os botões*/
+    transition: background-color 1s;/*atrasa em 1s o efeito da transição da cor de fundo quando o mouse for pasasdo em cima do menu*/
+}
+nav#menu h6 {
+    display: none; /*esconde o menu principal da visualização pelo usuário, mas ainda permite ser achado por mecanismos de buscas*/  
+}
+nav#menu li:hover /*efeito a ser aplicado no menu quando passar o mouse por cima*/{background-color: #606060; /*escure a cor do menu quando passado o mouse em cima do mesmo*/
+}
+nav#menu a{
+    color: black; /*muda a cor do texto para PRETO*/
+    text-decoration: none; /*retira o sublinhado do link*/
+}
+nav#menu a:hover {
+    color: white; /**muda a cor do texto para BRANCO quando for passado o mouse em cima*/
+}
+
+section#corpo {
+    display: block;
+    width: 500px; /*transforma em um bloco a sessao do corpo do texto*/
+    float: left;
+    border-right: 1px solid black;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+article#noticia-principal h2{
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;    
+}
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background: white;
+    margin: 0px; 
+}
+header#cabecalho-artigo h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;    
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+header#cabecalho-artigo h3{
+    font-size: 12px;
+    color: #606060;
+}
+.direita {
+    text-align: right;
+}
+table#tabelaspec {
+    border: 1px solid black;
+    border-spacing: 0px; /*retira os espaços internos das "linhas" da tabela*/
+    margin-left: auto;    
+    margin-right: auto; /*MARGIN LEFT e RIGHT é utilizado para centralizar a tabela*/
+}
+table#tabelaspec td{
+    border: 1px solid gray; /*cria as linhas "internas" da tabela*/
+    padding: 10px; /*aumenta o espaço interno das celulas da tabela*/
+    text-align: center; /*alinhamento do texto*/
+    vertical-align: middle;/*centraliza o texto no meio da célula, similiar ao comando do excel*/    
+}
+table#tabelaspec td.cd{
+    background-color: #cecece;
+}
+table#tabelaspec td.ce{
+   color: white;
+   background-color: #606060;
+   vertical-align: top;
+   text-align:right;
+   font-weight: bold;
+}
+table#tabelaspec caption{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+table#tabelaspec caption span{
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;/*bloco de programação para confiugar a data em formato e tamanho especifico**/
+}
+aside#lateral{
+   display: block; 
+   width: 350px; /*transforma em um bloco só com 400px de largura, para depois virar uma coluna lateral*/
+   float: right; /*FLOAT  LEFT E RIGHT é utilizado para deixar dois textos em formatos de coluna lado a lado na página*/
+   padding: 10px;
+   margin-top: 10px;
+   background-color: #dddddd;
+   box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+aside#lateral h1{
+    font-family:'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+}
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 12pt;
+    color: #ffffff;
+    padding: 5px;
+}
+footer#rodape {
+   clear: both; 
+   border-top: 1px solid black;
+}
+footer#rodape p{
+    text-align: center;
+}

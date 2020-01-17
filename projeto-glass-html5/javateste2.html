@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <title>Teste JavaScript</title>
+        <meta charset="UTF-8">
+<script>
+    var quebrada = false; // esta VAR significa que uma vez que a situação descrita acontecer, ela não vai voltar para o estado originar (de lâmpada inteira). Ela é também uma variável global, pois está acima das functions. a condicional FALSE indica que a variavel não irá entrar em funcionamento até ser ativada dentro da programação    
+    function mudaLampada (tipo){
+     if (!quebrada) //esta ultima parte diz para o codigo que, uma vez que a lampada for quebrada, ela não voltará ao estado de inteira novamente.
+     document.getElementById("luz").src= "_imagens/" + tipo + ".jpg"; //pega um elemento pelo ID, no caso, ele se conecta a imagem da lampada ACESSA, a imagem ARQUIVO acessa uma iagem diferente para cada comando diferente
+     if (tipo === 'lampada-quebrada'){
+     quebrada = true; //a VAR só será ativada nesta etapa da programação, após o tipo 3 ser ativado.
+    }
+    }
+</script>
+
+</head>
+<body>
+    <h1>Acenda a lâmpada</h1>
+    <img src="_imagens/lampada-apagada.jpg" id="luz" alt="" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')"/> <!-- os numeros entre parenteses acionam os comandos IFs especifico do codigo javascript, muito utlizado para reduzir o tamanho do código, vide comparação teste1 com teste2  -->
+</body>
+</html>
